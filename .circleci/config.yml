@@ -12,11 +12,11 @@ jobs:
       - checkout
       # Step 2: Create Virtual ENV and Install Dependencies
       - run:
-        name: install dependencies
-        command: |
-          python3 -m venv venv
-          . venv/bin/activate
-          pip install -r requirements.txt
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
       # Step 3: Run Linter and tests
       - run:
           name: run tests
